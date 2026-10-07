@@ -1,0 +1,38 @@
+graph: p=12, edges=25, min eig(Omega)=0.475
+tuning lambda on clean data (3-fold CV held-out log-likelihood) ...
+/Users/ramakrushna/Library/Python/3.14/lib/python/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/ramakrushna/Library/Python/3.14/lib/python/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/ramakrushna/Library/Python/3.14/lib/python/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+  lambda_fglasso = 0.137
+  lambda_t_em    = 0.118   (t=70s)
+  lambda_altt_em = 0.118   (t=130s)
+amplitude sweep ...
+  rep 5/20  (t=146s)
+  rep 10/20  (t=163s)
+  rep 15/20  (t=179s)
+  rep 20/20  (t=195s)
+spike sweep ...
+figures ...
+ method  eps  f1_mean  f1_std  precision_mean  precision_std  recall_mean  recall_std  op_err_mean  op_err_std  jaccard_mean  jaccard_std  n_edges_est_mean  n_edges_est_std
+altt_em 0.00    0.607   0.032           0.481          0.028        0.826       0.051        0.319       0.011         0.000        0.000             43.00            2.513
+altt_em 0.05    0.588   0.024           0.437          0.020        0.900       0.046        0.308       0.008         0.164        0.041             51.50            2.585
+altt_em 0.10    0.575   0.019           0.412          0.017        0.954       0.033        0.327       0.009         0.257        0.050             58.00            2.695
+altt_em 0.15    0.563   0.016           0.394          0.013        0.988       0.023        0.370       0.012         0.315        0.040             62.75            1.585
+fglasso 0.00    0.618   0.032           0.483          0.028        0.858       0.048        0.327       0.007         0.000        0.000             44.45            2.373
+fglasso 0.05    0.549   0.006           0.379          0.004        0.996       0.012        0.454       0.007         0.325        0.035             65.70            0.470
+fglasso 0.10    0.549   0.000           0.379          0.000        1.000       0.000        0.550       0.011         0.327        0.036             66.00            0.000
+fglasso 0.15    0.549   0.000           0.379          0.000        1.000       0.000        0.633       0.011         0.327        0.036             66.00            0.000
+   t_em 0.00    0.599   0.028           0.447          0.026        0.910       0.041        0.308       0.008         0.000        0.000             51.05            2.911
+   t_em 0.05    0.593   0.027           0.434          0.026        0.934       0.035        0.318       0.008         0.052        0.034             53.90            3.259
+   t_em 0.10    0.587   0.026           0.424          0.025        0.956       0.032        0.334       0.009         0.095        0.043             56.50            3.380
+   t_em 0.15    0.578   0.022           0.412          0.020        0.970       0.026        0.354       0.009         0.134        0.043             59.00            2.575
+
+===== GO/NO-GO =====
+D1 destabilization: edges 44 -> 66 of 66 possible (saturation 100%); op-err inflation 68%  -> PASS
+D2 stabilization:   t-EM edges 51.0 -> 56.5; instability 0.10 vs baseline 0.33; F1 0.59 vs clean 0.60  -> PASS
+D3 clean-data cost: t-EM clean F1 0.60 vs baseline 0.62  -> PASS
+VERDICT: GO
+done in 3.6 min

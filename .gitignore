@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# duplicate of the extracted EEG data file
+data/*.zip
+
+# unpublished paper draft and internal review notes
+manuscript/
+review/

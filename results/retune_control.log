@@ -1,0 +1,16 @@
+true edges: 12
+rep 1/10 done
+rep 2/10 done
+rep 3/10 done
+rep 4/10 done
+rep 5/10 done
+rep 6/10 done
+rep 7/10 done
+rep 8/10 done
+rep 9/10 done
+rep 10/10 done
+cv        : F1 0.308 (sd 0.000)  instability 0.208
+oracle_f1 : F1 0.311 (sd 0.004)  instability 0.483
+stable    : F1 0.308 (sd 0.000)  instability 0.000
+t_em      : F1 0.311 (sd 0.004)
+wrote /Users/ramakrushna/Downloads/Graphical Models/robust-functional-ggm/results/retune_control.csv

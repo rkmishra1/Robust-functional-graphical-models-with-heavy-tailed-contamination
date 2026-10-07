@@ -1,0 +1,12 @@
+bridge graph: edges=12, margin gamma=0.384
+  [bridge] lambda[fglasso]=0.476 (density cal, 0s)
+  [bridge] lambda[t_em]=0.476 (density cal, 1s)
+  [bridge] lambda[altt_em]=0.252 (density cal, 1s)
+  [bridge] lambda[wglasso]=0.476 (density cal, 1s)
+  [bridge] rep 1/6 (2s)
+  [bridge] rep 2/6 (2s)
+  [bridge] rep 3/6 (3s)
+  [bridge] rep 4/6 (3s)
+  [bridge] rep 5/6 (3s)
+  [bridge] rep 6/6 (4s)
+  [bridge] cell done in 0.1 min

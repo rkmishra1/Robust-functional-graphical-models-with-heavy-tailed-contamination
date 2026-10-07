@@ -1,0 +1,30 @@
+EEG raw: 14980 samples x 14 channels
+epochs: 234 x T=64
+  winsorized coefficients; frac clipped = 0.0144
+  lambda[fglasso] = 13.937 (scale 2.32, t=5s)
+  lambda[t_em] = 1.277 (scale 0.76, t=75s)
+  lambda[altt_em] = 13.826 (scale 2.30, t=155s)
+  reference graph [fglasso]: 69 edges (t=155s)
+  reference graph [t_em]: 67 edges (t=160s)
+  reference graph [altt_em]: 65 edges (t=165s)
+  rep 1/6 (t=198s)
+  rep 2/6 (t=232s)
+  rep 3/6 (t=264s)
+  rep 4/6 (t=298s)
+  rep 5/6 (t=331s)
+  rep 6/6 (t=363s)
+              drift_mean  drift_std  n_edges_mean  n_edges_std
+method  eps                                                   
+altt_em 0.00       0.000      0.000        65.000        0.000
+        0.05       0.215      0.110        82.333       13.426
+        0.10       0.210      0.083        77.667       14.679
+        0.20       0.221      0.072        78.167       14.063
+fglasso 0.00       0.000      0.000        69.000        0.000
+        0.05       0.076      0.020        65.333        1.033
+        0.10       0.105      0.015        66.167        1.941
+        0.20       0.139      0.032        67.167        2.137
+t_em    0.00       0.000      0.000        67.000        0.000
+        0.05       0.575      0.037        28.500        2.510
+        0.10       0.600      0.050        26.833        3.371
+        0.20       0.592      0.024        27.333        1.633
+done in 6.1 min
